@@ -8,4 +8,4 @@ router = Router()
 
 @router.message(CommandStart())
 async def on_cmd_start(message: types.Message, dao: HolderDao):
-    await message.answer(f"Hello, {message.from_user.full_name}!")
+    await message.answer(text=f"Hello, {message.from_user.full_name}!")
